@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import binignitLogo from "./img/binignit.jpg";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ function App() {
     } else if (!regExNumber.test(password)) {
       errorMessage = "Password must contain at least one number";
     } else {
-      errorMessage = "Inputs are valid";
+      errorMessage = "Inputs are valid BINIGNIT";
     }
 
     setMessage(errorMessage);
@@ -39,7 +40,8 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h2>Email and Password Validation</h2>
+        <h2>EMAIL AND PASSWORD AUTHENTICATION</h2>
+        <img src={binignitLogo} alt="Binignit Logo" className="logo" />
       </div>
       <div className="card">
         <label htmlFor="email" className="label">
@@ -67,6 +69,7 @@ function App() {
         <button className="button" onClick={validateInputs}>Check</button>
         <p className="message">{message}</p>
       </div>
+
     </div>
   );
 }

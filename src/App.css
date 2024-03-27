@@ -46,3 +46,10 @@
   font-size: 16px;
   box-sizing: border-box;
 }
+
+.logo{
+  width: 100px;
+  height: 100px;
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto;
+}
